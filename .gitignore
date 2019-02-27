@@ -3,3 +3,4 @@ game.py
 req.json
 venv
 .idea
+__pycache__
