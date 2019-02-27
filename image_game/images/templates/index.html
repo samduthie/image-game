@@ -1,0 +1,24 @@
+<html>
+
+
+<head>
+    <title>Image Guessing Game</title>
+</head>
+<p align="center">
+{% for tag in tags %}
+<a href="/image/{{image_id}}/{{tag}}" ><button>{{tag}}</button></a>
+{% endfor %}
+</p>
+<p align="center">
+<img src="{{ image_url }}" width="80%", height="80%">
+</p>
+<p align="center">
+{% if correct_guess %}
+<b>GREAT ANSWER KEEP GOING</b>
+{% endif %}
+
+{% if not correct_guess %}
+<b>WRONG ANSWER TRY AGAIN</b>
+{% endif %}
+</p>
+</html>
